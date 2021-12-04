@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>output</title>
+</head>
+<body>
+<p id = "out"></p>
+<a href="file:///home/gokul/firstoperand.html"><button>Home</button></a>
+</body>
+<script>
+var val1 = localStorage.getItem("val1");
+var val2 = localStorage.getItem("oper");
+var val3 = sessionStorage.getItem("seop");
+var out= val1 + val2 + val3;
+console.log(out);
+console.log(eval(out));
+document.getElementById("out").innerText=out+" = "+eval(out);
+</script>
+</html>

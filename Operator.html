@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Operator
+</title>
+</head>
+<body>
+<label for = "operator" >Operator</label>&emsp;
+<select id = "operator" style = "width:100px;">
+<option value = ""/>--Select--</option>
+<option value = "+"/>+</option>
+<option value = "-"/>-</option>
+<option value = "*"/>*</option>
+<option value = "/"/>/</option>
+</select><br>
+<button onclick = op()>next</button>
+</body>
+<script>
+function op()
+{
+	var opr = document.getElementById("operator").value;
+	if (opr !== "")
+	{
+	console.log(opr); 
+	localStorage.setItem("oper",opr);
+	const queryString = window.location.search;
+	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+	const val1 = urlParams.get('val1');
+	console.log(val1);
+	localStorage.setItem("val1",val1);
+	window.location.replace("/home/gokul/secondoperand.html");
+	}
+}
+</script>
+</html>

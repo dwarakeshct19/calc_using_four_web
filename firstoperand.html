@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>First Operand
+</title>
+</head>
+<body>
+<label for = "first" >First Operand</label>&emsp;
+<input type = "number" id = "first"><br>
+<button onclick = fop()>next</button>
+</body>
+<script>
+ function fop()
+ {
+ console.log(document.getElementById("first").value);
+ window.location.replace("/home/gokul/Operator.html?val1="+document.getElementById("first").value);
+ }
+</script>
+</html>
+

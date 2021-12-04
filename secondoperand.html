@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Second Operand
+</title>
+</head>
+<body>
+<label for = "second" >Second Operand</label>&emsp;
+<input type = "number" id = "second"><br>
+<button onclick = sop()>next</button>
+</body>
+<script>
+function sop()
+{
+sessionStorage.setItem("seop", document.getElementById("second").value);
+window.location.replace("/home/gokul/output.html");
+}
+</script>
+</html>
